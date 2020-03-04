@@ -2,7 +2,9 @@ node {
   def app
   stages{
     stage('build'){
-          app=docker.build(arjun1298/arjun)
+          steps{
+            app=docker.build(arjun1298/arjun)
+            }
      }
   }
 }
