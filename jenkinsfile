@@ -4,7 +4,7 @@ node {
     stage('build'){
           steps{
             script{
-              docker.build(arjun1298/arjun)
+              sh 'docker build -t arjun .'
               }
             }
      }
